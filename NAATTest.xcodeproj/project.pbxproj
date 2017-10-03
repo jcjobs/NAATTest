@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495258C2115B0DB341EBF78B /* Pods_NAATTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D10D0737A8ED788EA134C0 /* Pods_NAATTest.framework */; };
 		B9EF41ED1F83675F002A30D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF41EC1F83675F002A30D8 /* AppDelegate.swift */; };
 		B9EF41EF1F83675F002A30D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF41EE1F83675F002A30D8 /* ViewController.swift */; };
 		B9EF41F21F83675F002A30D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9EF41F01F83675F002A30D8 /* Main.storyboard */; };
 		B9EF41F41F83675F002A30D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9EF41F31F83675F002A30D8 /* Assets.xcassets */; };
 		B9EF41F71F83675F002A30D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9EF41F51F83675F002A30D8 /* LaunchScreen.storyboard */; };
+		B9EF42051F8368A5002A30D8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42041F8368A5002A30D8 /* Config.swift */; };
+		B9EF420A1F8368AC002A30D8 /* ServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42061F8368AC002A30D8 /* ServiceConnector.swift */; };
+		B9EF420B1F8368AC002A30D8 /* LocationsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42071F8368AC002A30D8 /* LocationsParser.swift */; };
+		B9EF420C1F8368AC002A30D8 /* CResultWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42081F8368AC002A30D8 /* CResultWS.swift */; };
+		B9EF420D1F8368AC002A30D8 /* GenericResponseWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42091F8368AC002A30D8 /* GenericResponseWS.swift */; };
+		B9EF42101F8368B2002A30D8 /* LocationsPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF420E1F8368B1002A30D8 /* LocationsPersistenceManager.swift */; };
+		B9EF42111F8368B2002A30D8 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF420F1F8368B2002A30D8 /* BaseDAO.swift */; };
+		B9EF42131F8368B8002A30D8 /* RLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42121F8368B8002A30D8 /* RLocation.swift */; };
+		B9EF42151F8368BE002A30D8 /* LocationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42141F8368BE002A30D8 /* LocationsController.swift */; };
+		B9EF421B1F8368C5002A30D8 /* LocationsTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42161F8368C5002A30D8 /* LocationsTableViewViewController.swift */; };
+		B9EF421C1F8368C5002A30D8 /* LocationDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42181F8368C5002A30D8 /* LocationDetailTableViewCell.swift */; };
+		B9EF421D1F8368C5002A30D8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42191F8368C5002A30D8 /* MapViewController.swift */; };
+		B9EF421E1F8368C5002A30D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF421A1F8368C5002A30D8 /* BaseViewController.swift */; };
+		B9EF42201F8368DE002A30D8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF421F1F8368DE002A30D8 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B5019CB25D5DC43A926136D /* Pods-NAATTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAATTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAATTest/Pods-NAATTest.release.xcconfig"; sourceTree = "<group>"; };
+		1F21EB88BD8941003B9E7E8B /* Pods-NAATTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAATTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAATTest/Pods-NAATTest.debug.xcconfig"; sourceTree = "<group>"; };
+		71D10D0737A8ED788EA134C0 /* Pods_NAATTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NAATTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EF41E91F83675F002A30D8 /* NAATTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NAATTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EF41EC1F83675F002A30D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9EF41EE1F83675F002A30D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,20 @@
 		B9EF41F31F83675F002A30D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9EF41F61F83675F002A30D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9EF41F81F83675F002A30D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9EF42041F8368A5002A30D8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B9EF42061F8368AC002A30D8 /* ServiceConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConnector.swift; sourceTree = "<group>"; };
+		B9EF42071F8368AC002A30D8 /* LocationsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsParser.swift; sourceTree = "<group>"; };
+		B9EF42081F8368AC002A30D8 /* CResultWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CResultWS.swift; sourceTree = "<group>"; };
+		B9EF42091F8368AC002A30D8 /* GenericResponseWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericResponseWS.swift; sourceTree = "<group>"; };
+		B9EF420E1F8368B1002A30D8 /* LocationsPersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsPersistenceManager.swift; sourceTree = "<group>"; };
+		B9EF420F1F8368B2002A30D8 /* BaseDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
+		B9EF42121F8368B8002A30D8 /* RLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLocation.swift; sourceTree = "<group>"; };
+		B9EF42141F8368BE002A30D8 /* LocationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsController.swift; sourceTree = "<group>"; };
+		B9EF42161F8368C5002A30D8 /* LocationsTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewViewController.swift; sourceTree = "<group>"; };
+		B9EF42181F8368C5002A30D8 /* LocationDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B9EF42191F8368C5002A30D8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B9EF421A1F8368C5002A30D8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B9EF421F1F8368DE002A30D8 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495258C2115B0DB341EBF78B /* Pods_NAATTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FE1C3D9969B70ED6C289A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71D10D0737A8ED788EA134C0 /* Pods_NAATTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9EF41E01F83675F002A30D8 = {
 			isa = PBXGroup;
 			children = (
 				B9EF41EB1F83675F002A30D8 /* NAATTest */,
 				B9EF41EA1F83675F002A30D8 /* Products */,
+				FD01F445EFC643D136116BA2 /* Pods */,
+				0FE1C3D9969B70ED6C289A81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +97,12 @@
 		B9EF41EB1F83675F002A30D8 /* NAATTest */ = {
 			isa = PBXGroup;
 			children = (
+				B9EF42031F836869002A30D8 /* Configuration */,
+				B9EF42021F836858002A30D8 /* NET */,
+				B9EF42011F83684C002A30D8 /* DAO */,
+				B9EF42001F836840002A30D8 /* Models */,
+				B9EF41FF1F836831002A30D8 /* Controllers */,
+				B9EF41FE1F83681E002A30D8 /* Views */,
 				B9EF41EC1F83675F002A30D8 /* AppDelegate.swift */,
 				B9EF41EE1F83675F002A30D8 /* ViewController.swift */,
 				B9EF41F01F83675F002A30D8 /* Main.storyboard */,
@@ -64,6 +113,79 @@
 			path = NAATTest;
 			sourceTree = "<group>";
 		};
+		B9EF41FE1F83681E002A30D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF421F1F8368DE002A30D8 /* LogInViewController.swift */,
+				B9EF421A1F8368C5002A30D8 /* BaseViewController.swift */,
+				B9EF42161F8368C5002A30D8 /* LocationsTableViewViewController.swift */,
+				B9EF42191F8368C5002A30D8 /* MapViewController.swift */,
+				B9EF42171F8368C5002A30D8 /* TableCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9EF41FF1F836831002A30D8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF42141F8368BE002A30D8 /* LocationsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B9EF42001F836840002A30D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF42121F8368B8002A30D8 /* RLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9EF42011F83684C002A30D8 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF420F1F8368B2002A30D8 /* BaseDAO.swift */,
+				B9EF420E1F8368B1002A30D8 /* LocationsPersistenceManager.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		B9EF42021F836858002A30D8 /* NET */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF42081F8368AC002A30D8 /* CResultWS.swift */,
+				B9EF42091F8368AC002A30D8 /* GenericResponseWS.swift */,
+				B9EF42071F8368AC002A30D8 /* LocationsParser.swift */,
+				B9EF42061F8368AC002A30D8 /* ServiceConnector.swift */,
+			);
+			path = NET;
+			sourceTree = "<group>";
+		};
+		B9EF42031F836869002A30D8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF42041F8368A5002A30D8 /* Config.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B9EF42171F8368C5002A30D8 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF42181F8368C5002A30D8 /* LocationDetailTableViewCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		FD01F445EFC643D136116BA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F21EB88BD8941003B9E7E8B /* Pods-NAATTest.debug.xcconfig */,
+				1B5019CB25D5DC43A926136D /* Pods-NAATTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9EF41FB1F83675F002A30D8 /* Build configuration list for PBXNativeTarget "NAATTest" */;
 			buildPhases = (
+				BC08CE6E70C89A19F6754597 /* [CP] Check Pods Manifest.lock */,
 				B9EF41E51F83675F002A30D8 /* Sources */,
 				B9EF41E61F83675F002A30D8 /* Frameworks */,
 				B9EF41E71F83675F002A30D8 /* Resources */,
+				9DC374B825AA5E4BAFCB5A39 /* [CP] Embed Pods Frameworks */,
+				97549B926DE3DAB4F695E45E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +256,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		97549B926DE3DAB4F695E45E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAATTest/Pods-NAATTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC374B825AA5E4BAFCB5A39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NAATTest/Pods-NAATTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAATTest/Pods-NAATTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC08CE6E70C89A19F6754597 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NAATTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9EF41E51F83675F002A30D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EF42101F8368B2002A30D8 /* LocationsPersistenceManager.swift in Sources */,
+				B9EF42131F8368B8002A30D8 /* RLocation.swift in Sources */,
 				B9EF41EF1F83675F002A30D8 /* ViewController.swift in Sources */,
+				B9EF420A1F8368AC002A30D8 /* ServiceConnector.swift in Sources */,
+				B9EF420C1F8368AC002A30D8 /* CResultWS.swift in Sources */,
+				B9EF421E1F8368C5002A30D8 /* BaseViewController.swift in Sources */,
 				B9EF41ED1F83675F002A30D8 /* AppDelegate.swift in Sources */,
+				B9EF42151F8368BE002A30D8 /* LocationsController.swift in Sources */,
+				B9EF421B1F8368C5002A30D8 /* LocationsTableViewViewController.swift in Sources */,
+				B9EF420D1F8368AC002A30D8 /* GenericResponseWS.swift in Sources */,
+				B9EF42051F8368A5002A30D8 /* Config.swift in Sources */,
+				B9EF420B1F8368AC002A30D8 /* LocationsParser.swift in Sources */,
+				B9EF42201F8368DE002A30D8 /* LogInViewController.swift in Sources */,
+				B9EF421C1F8368C5002A30D8 /* LocationDetailTableViewCell.swift in Sources */,
+				B9EF42111F8368B2002A30D8 /* BaseDAO.swift in Sources */,
+				B9EF421D1F8368C5002A30D8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +467,7 @@
 		};
 		B9EF41FC1F83675F002A30D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F21EB88BD8941003B9E7E8B /* Pods-NAATTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +483,7 @@
 		};
 		B9EF41FD1F83675F002A30D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5019CB25D5DC43A926136D /* Pods-NAATTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
