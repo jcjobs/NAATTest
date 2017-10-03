@@ -86,7 +86,8 @@ class LocationsTableViewViewController: UIViewController {
  
     func showLocations(){
         let locationsController = LocationsController()
-        self.locations = locationsController.getLocations()
+        let newArray = locationsController.getLocations()
+        self.locations = newArray.sorted{$0.distance < $1.distance}
         self.tblImages.reloadData()
     }
 
