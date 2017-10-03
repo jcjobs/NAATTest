@@ -33,7 +33,7 @@ class LocationsController: NSObject {
     
     fileprivate let WS_PARAMETTER_FUNCTION = "json"
     
-    func makeRequestUsersWithParametters(_ lat : String , lng: String){
+    func makeRequestLocationsWithParametters(_ lat : String , lng: String){
         
         let params:[String:String] = [WS_PARAMETTER_LOCATION:lat.appending(",\(lng)"), WS_PARAMETTER_RADIUS:WS_PARAMETTER_RADIUS_VALUE,WS_PARAMETTER_TYPE:WS_PARAMETTER_TYPE_VALUE, WS_PARAMETTER_KEY:WS_PARAMETTER_KEY_VALUE ]
         serviceConnector.delegate = self

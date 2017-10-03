@@ -9,10 +9,10 @@
 import UIKit
 
 class LogInViewController: BaseViewController {
-    @IBOutlet weak var txfUser: UITextField!
-    @IBOutlet weak var txfPassword: UITextField!
+    @IBOutlet weak var txfLat: UITextField!
+    @IBOutlet weak var txflng: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var btnLogIn: UIButton!
+    @IBOutlet weak var btnGet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,19 +55,23 @@ class LogInViewController: BaseViewController {
     }
     
     
-    @IBAction func logIn(_ sender: Any) {
-        if (txfUser.text!.characters.count > 0 && txfPassword.text!.characters.count > 0){
-            self.activityIndicator.startAnimating()
-            
-            let locationsController = LocationsController()
-            locationsController.delegate = self
-            locationsController.makeRequestUsersWithParametters(txfUser.text!, lng: txfPassword.text!)
+    @IBAction func getLocations(_ sender: Any) {
+        
+        if Reachability.isConnectedToNetwork() == true {
+            if (txfLat.text!.characters.count > 0 && txflng.text!.characters.count > 0){
+                self.activityIndicator.startAnimating()
+                
+                let locationsController = LocationsController()
+                locationsController.delegate = self
+                locationsController.makeRequestLocationsWithParametters(txfLat.text!, lng: txflng.text!)
+            }
+            else{
+                self.showAlert("Aviso", message: "Debes proporcionar latitud y longitud")
+            }
         }
         else{
-            self.showAlert("Aviso", message: "Debes proporcionar latitud y longitud")
+           self.showAlert("Aviso", message: "No dispone de una conexión a internet estable")
         }
-        
-        
         
     }
     
@@ -86,10 +90,10 @@ class LogInViewController: BaseViewController {
     
     internal func setStyle(){
         
-        self.btnLogIn.backgroundColor = self.uicolorFromHex(0x1483C6)
-        self.btnLogIn.layer.cornerRadius = 25
-        self.btnLogIn.layer.borderWidth = 1
-        self.btnLogIn.layer.borderColor = self.uicolorFromHex(0x1483C6).cgColor
+        self.btnGet.backgroundColor = self.uicolorFromHex(0x1483C6)
+        self.btnGet.layer.cornerRadius = 25
+        self.btnGet.layer.borderWidth = 1
+        self.btnGet.layer.borderColor = self.uicolorFromHex(0x1483C6).cgColor
         
     }
 

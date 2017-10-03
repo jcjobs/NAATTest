@@ -43,7 +43,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmv-dy-acr"/>
+                                    <action selector="getLocations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1QH-N7-qAg"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-99.169601" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uim-dg-Dok">
@@ -102,9 +102,9 @@
                     <navigationItem key="navigationItem" id="w1t-xZ-02A"/>
                     <connections>
                         <outlet property="activityIndicator" destination="xPF-Yt-uZf" id="Wfq-J9-RMK"/>
-                        <outlet property="btnLogIn" destination="yCM-ua-Gve" id="tjw-lQ-ak2"/>
-                        <outlet property="txfPassword" destination="uim-dg-Dok" id="2GE-hs-MBj"/>
-                        <outlet property="txfUser" destination="sUY-1u-Oqy" id="PkA-kU-hOP"/>
+                        <outlet property="btnGet" destination="yCM-ua-Gve" id="4cm-vq-qTQ"/>
+                        <outlet property="txfLat" destination="sUY-1u-Oqy" id="JVv-jR-Y4a"/>
+                        <outlet property="txflng" destination="uim-dg-Dok" id="f19-xU-Yu1"/>
                         <segue destination="onz-gI-44H" kind="show" identifier="showTableView" id="ukS-IH-5fW"/>
                     </connections>
                 </viewController>

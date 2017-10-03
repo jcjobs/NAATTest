@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		495258C2115B0DB341EBF78B /* Pods_NAATTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D10D0737A8ED788EA134C0 /* Pods_NAATTest.framework */; };
+		B98514CB1F83791300FD638C /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98514CA1F83791300FD638C /* Tools.swift */; };
 		B9EF41ED1F83675F002A30D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF41EC1F83675F002A30D8 /* AppDelegate.swift */; };
 		B9EF41EF1F83675F002A30D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF41EE1F83675F002A30D8 /* ViewController.swift */; };
 		B9EF41F21F83675F002A30D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9EF41F01F83675F002A30D8 /* Main.storyboard */; };
 		B9EF41F41F83675F002A30D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9EF41F31F83675F002A30D8 /* Assets.xcassets */; };
 		B9EF41F71F83675F002A30D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9EF41F51F83675F002A30D8 /* LaunchScreen.storyboard */; };
-		B9EF42051F8368A5002A30D8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42041F8368A5002A30D8 /* Config.swift */; };
+		B9EF42051F8368A5002A30D8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42041F8368A5002A30D8 /* Reachability.swift */; };
 		B9EF420A1F8368AC002A30D8 /* ServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42061F8368AC002A30D8 /* ServiceConnector.swift */; };
 		B9EF420B1F8368AC002A30D8 /* LocationsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42071F8368AC002A30D8 /* LocationsParser.swift */; };
 		B9EF420C1F8368AC002A30D8 /* CResultWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF42081F8368AC002A30D8 /* CResultWS.swift */; };
@@ -33,6 +34,7 @@
 		1B5019CB25D5DC43A926136D /* Pods-NAATTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAATTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAATTest/Pods-NAATTest.release.xcconfig"; sourceTree = "<group>"; };
 		1F21EB88BD8941003B9E7E8B /* Pods-NAATTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAATTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAATTest/Pods-NAATTest.debug.xcconfig"; sourceTree = "<group>"; };
 		71D10D0737A8ED788EA134C0 /* Pods_NAATTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NAATTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98514CA1F83791300FD638C /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		B9EF41E91F83675F002A30D8 /* NAATTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NAATTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EF41EC1F83675F002A30D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9EF41EE1F83675F002A30D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		B9EF41F31F83675F002A30D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9EF41F61F83675F002A30D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9EF41F81F83675F002A30D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9EF42041F8368A5002A30D8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B9EF42041F8368A5002A30D8 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		B9EF42061F8368AC002A30D8 /* ServiceConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConnector.swift; sourceTree = "<group>"; };
 		B9EF42071F8368AC002A30D8 /* LocationsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsParser.swift; sourceTree = "<group>"; };
 		B9EF42081F8368AC002A30D8 /* CResultWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CResultWS.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B98514C91F83790500FD638C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B98514CA1F83791300FD638C /* Tools.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B9EF41E01F83675F002A30D8 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		B9EF41EB1F83675F002A30D8 /* NAATTest */ = {
 			isa = PBXGroup;
 			children = (
+				B98514C91F83790500FD638C /* Utils */,
 				B9EF42031F836869002A30D8 /* Configuration */,
 				B9EF42021F836858002A30D8 /* NET */,
 				B9EF42011F83684C002A30D8 /* DAO */,
@@ -164,7 +175,7 @@
 		B9EF42031F836869002A30D8 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				B9EF42041F8368A5002A30D8 /* Config.swift */,
+				B9EF42041F8368A5002A30D8 /* Reachability.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -325,9 +336,10 @@
 				B9EF421E1F8368C5002A30D8 /* BaseViewController.swift in Sources */,
 				B9EF41ED1F83675F002A30D8 /* AppDelegate.swift in Sources */,
 				B9EF42151F8368BE002A30D8 /* LocationsController.swift in Sources */,
+				B98514CB1F83791300FD638C /* Tools.swift in Sources */,
 				B9EF421B1F8368C5002A30D8 /* LocationsTableViewViewController.swift in Sources */,
 				B9EF420D1F8368AC002A30D8 /* GenericResponseWS.swift in Sources */,
-				B9EF42051F8368A5002A30D8 /* Config.swift in Sources */,
+				B9EF42051F8368A5002A30D8 /* Reachability.swift in Sources */,
 				B9EF420B1F8368AC002A30D8 /* LocationsParser.swift in Sources */,
 				B9EF42201F8368DE002A30D8 /* LogInViewController.swift in Sources */,
 				B9EF421C1F8368C5002A30D8 /* LocationDetailTableViewCell.swift in Sources */,
